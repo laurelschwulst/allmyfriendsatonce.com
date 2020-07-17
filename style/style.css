@@ -1,0 +1,313 @@
+html {
+  height:100%;
+}
+
+body {
+  margin:0;
+  overflow-x:hidden !important;
+}
+
+/* Let's get this party started */
+
+h1.title {
+  font-size: 21px;
+  margin-top: 1em;
+}
+
+#side-column {
+  position:absolute;
+  left:0;
+  width:20%;
+  height:100%;
+  overflow-x:hidden !important;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+}
+
+#side-column ul {
+  list-style-type:none;
+  margin-top:0;
+  padding-left:0;
+}
+
+#side-column li {
+  display:none;
+  text-align:center;
+  padding: 5px 5px 5px 10px;
+}
+
+#side-column li svg {
+  max-width:100%;
+  max-height:100%;
+}
+
+#main-column {
+  position:absolute;
+  left:20%;
+  width:80%;
+  height:100%;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#main-column .text p, #main-column .text ul {
+  max-width: 640px;
+}
+
+#main-column {
+  padding-top:1em;
+  font-size: 21px;
+  padding-left:15px;
+  padding-right:15px;
+  box-sizing:border-box;
+}
+
+#main-column .text img {
+  max-width: 100%;
+}
+
+#main-column .interstitial img {
+  max-width: 85%;
+}
+
+#main-column .byline {
+  font-weight: bold;
+}
+
+#main-column h1, #main-column h2, #main-column h3 {
+  font-size: 21px;
+}
+
+#main-column h2, #main-column h3 {
+  margin-bottom: 0;
+  display: none;
+}
+
+#main-column .caption {
+  font-size: 14px;
+  margin-top: .25em;
+}
+
+#keyboard-arrows {
+  position: fixed !important;
+  bottom: 15px;
+  right: 30px;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 5px;
+}
+
+.arrow-key {
+  color: #000;
+  margin: 3px;
+  padding: 10px 20px 10px 26px;
+  font-size: 10px;
+  line-height: 40px;
+  border: 1px solid #000000;
+  border-color: #e1e1e1 #a1a1a1 #848484 #e1e1e1;
+}
+
+.arrow-key:hover {
+  cursor: pointer;
+}
+
+.arrow-key.down {
+}
+
+.arrow-key.pressed {
+  border-color: #848484 #e1e1e1 #e1e1e1 #a1a1a1;
+}
+
+#lock {
+  position:absolute;
+  z-index:1;
+  width:100%;
+  height:100%;
+  background:#000;
+  opacity:0.2;
+}
+
+#overlay {
+  display:flex;
+  display:-webkit-flex;
+  visibility:hidden;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+  cursor:pointer;
+}
+
+#overlay img {
+  margin:auto;
+  max-width:100%;
+  max-height:100%;
+}
+
+#overlay img.darja {
+  margin:auto;
+  max-width:100%;
+  max-height: 200%;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:5%;
+  padding-right:5%;
+}
+
+ul.index {
+  margin-top: .25em;
+  margin-left: 1em;
+}
+
+.index li svg {
+  width:30px;
+  height:30px;
+  padding: 1px 0;
+  vertical-align:middle;
+}
+
+.index li {
+  display:block;
+}
+
+.index li a {
+  padding-left:10px;
+}
+
+.index {
+  padding-left:0;
+  margin-left:0;
+  list-style-type:none;
+}
+
+/*
+.interstitial {
+  display:flex;
+  display:-webkit-flex;
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  overflow-y:scroll;
+  -webkit-overflow-scrolling:touch;
+  cursor:pointer;
+}
+*/
+
+.interstitial img {
+  margin:auto;
+  max-width:100%;
+}
+
+article a { 
+  text-decoration: underline;
+  color: #00f;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+a.green, .green, .green path {
+  color: #789d5e;
+  fill: #789d5e;
+}
+a.maroon, .maroon, .maroon path {
+  color: #b19a98;
+  fill: #b19a98;
+}
+a.yellow, .yellow, .yellow path {
+  color: #fde34b;
+  fill: #fde34b;
+}
+a.brown, .brown, .brown path {
+  color: #5e4c3f;
+  fill: #5e4c3f;
+}
+a.orange, .orange, .orange path {
+  color: #f97639;
+  fill: #f97639;
+}
+a.red, .red, .red path {
+  color: #f71c32;
+  fill: #f71c32;
+}
+a.blue, .blue, .blue path {
+  color: #5b86d3;
+  fill: #5b86d3;
+}
+a.pink, .pink, .pink path {
+  color: #ee90af;
+  fill: #ee90af;
+}
+a.current, .current, .current path {
+  color: #f0f0f0 !important;
+  fill: #f0f0f0 !important;
+  cursor:default !important;
+}
+a.visited, .visited a, .visited, .visited path {
+   color: #A15260 !important;
+   fill: #A15260 !important;
+}
+
+/*
+#7dede0 // teal
+fba583 // light pink/orange
+*/
+
+
+svg path:hover, svg polygon:hover, svg polyline:hover {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 960px ) {
+  #keyboard-arrows {
+    display: none !important;
+  }
+  #main-column .interstitial img {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  #main-column .text, #main-column h2, #main-column h3 {
+    font-size: 17px;
+    line-height: 19px;
+  }
+  #keyboard-arrows, .index svg {
+    display: none;
+  }
+  ul.index {
+  	margin-left: -.5em;
+  }
+}
+
+@media print {
+   #keyboard-arrows {
+     display: none;
+   }
+   #side-column {
+     height: auto;
+     overflow:hidden;
+   }
+   #main-column {
+     width: 100%;
+     margin: 0;
+     height: auto;
+     position: relative;
+   }
+   li.current path {
+     fill: #000000 !important;
+     color: #000000 !important;
+   }
+   li:not(.current) {
+     display: none !important;
+   }
+}

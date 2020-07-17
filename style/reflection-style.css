@@ -1,0 +1,22 @@
+body { margin: 0; padding: 0; }
+
+h1 { width: 100%; text-align: center; color: #000; }
+
+canvas, .accordion-header img { display:block; margin: 0 auto; }
+
+.accordion-row { float: left; width: 25%; }
+
+.accordion-header { width: 100%; }
+
+.accordion-header:hover { cursor: pointer; }
+
+.accordion-body { display: block; }
+
+.accordion-body { display: none; }
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.clearer { clear: both; height: 60px; }

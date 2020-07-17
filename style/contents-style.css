@@ -1,0 +1,16 @@
+body { }
+
+img { max-width: 100%; }
+
+hr { width: 100%; border-top: 1px solid #000; }
+
+article { border-bottom: 1px solid #000; padding-bottom: 1em; margin-bottom: 1em; }
+
+.interstitial-image { padding: 1em; background: yellow; margin-bottom: 1em; margin-top: -1em; border-bottom: 1px solid #000; }
+.interstitial-image img { display: block; margin: 0 auto; }
+
+div.byline { font-size: 24px; font-weight: bold; font-style: italic; width: 100%; }
+
+h2, h3 { font-size: 24px; margin: 0; }
+
+.caption { font-style: italic; margin-top: 0; }
